@@ -14,7 +14,7 @@ pipeline {
             steps {
                 withAWS(region:'us-west-2', credentials:'aws-static'){
                     sh '''
-                        aws eks --region us-west-2 update-kubeconfig --name Capstonecluster
+                        aws eks --region us-west-2 update-kubeconfig --name CapstoneCluster
                     '''
                 }
             }
